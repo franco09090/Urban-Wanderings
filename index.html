@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Urban Wanderings</title>
+  <link rel="icon" href="Urban Wanderings Logo/Urban Wanderings  (2).png">
+  <link href="urbanwanderings.css" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div id="barraNavegacion">
+        <nav>
+          <ul id="navegacion">
+            <img class="imagenLogo" src="Urban Wanderings Logo/Urban Wanderings  (1).png">
+           <a href="https://drive.google.com/drive/folders/1-X5k6YsVhvK-6CROnxILl31t4KF4l9Ln?usp=sharing" target="_blank"><img class="imagenDrive" src="https://1000marcas.net/wp-content/uploads/2021/06/Google-Drive-logo.png"> </a>
+            <a href="https://www.instagram.com/urban.wanderings2024?igsh=MW1nYjZpOW80bTBkNg==" target="_blank"><img class="imagenIg"src="Logos redes/b18ab5c717e6da2faa7f30a2ccf20c72.png"></a>
+          </ul>
+        </nav>
+      </div>
+<section class="container">
+  <div class="slider-wrapper">
+      <div class="slider">
+          <div class="imagenContenedor">
+        <img id="slide-1" src="Photos/London/Day 2/Slide 1.jpg">
+          <div class="textoSlider">
+              <h5>Are you ready to plan the best trip of your life?</h2>
+              <p class="parrafoSlider">London, a dynamic metropolis steeped in history, offers iconic landmarks, cultural diversity, and endless entertainment opportunities.</p>
+          </div>
+          </div>
+          <div class="imagenContenedor">
+          <img id="slide-2" src="Photos/Amsterdam/Day 1/City Centre Amsterdam.jpg">
+          <div class="textoSlider">
+              <h5>Are you ready to plan the best trip of your life?</h2>
+              <p class="parrafoSlider">Discover Amsterdam's vibrant culture, picturesque canals, and charming streets, beckoning you to explore its enchanting beauty.</p>
+          </div>
+          </div>
+          <div class="imagenContenedor">
+          <img id="slide-3" src="Photos/Rome/Day 3/Rome Day 3 additional (3).jpg">
+          <div class="textoSlider">
+              <h5>Are you ready to plan the best trip of your life?</h2>
+              <p class="parrafoSlider">Embark on a journey through Rome's ancient wonders, where history, art, and exquisite cuisine intertwine seamlessly.</p>
+          </div>
+          </div>
+      </div>
+      <div class="slider-nav">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+      </div>
+  </div>
+</section>
+<h1 id="tituloPagina">Urban Wanderings</h1>
+</header>
+<main>
+  <h1 id="titleSelect">Select which place you want to learn about</h1>
+  <select id="selectPlace">
+    <option value="london">London</option>
+    <option value="amsterdam">Amsterdam</option>
+    <option value="rome">Rome</option>
+  </select>
+  <button id="selectButton" onclick="replaceInformation()">Click Me</button>
+  <p id="output">Selecciona una ciudad y presiona el botón.</p>
+  <div id="londonSection" class="mostrar">
+    <div id="explicacion">
+        <div id="titulos"></div>
+        <div id="history"></div>
+        <div id="tituloTips"></div>
+        <div id="tips">
+          <div id="tipsParrafo"></div>
+          <div id="tipsImagen"></div>
+        </div>
+        <div id="titulosDias"></div>
+        <div id="day1"></div>
+        <div id="titulosDias2"></div>
+        <div id="experienceDay2"></div>
+        <div id="titulosDias3"></div>
+        <div id="experienceDay3"></div>
+        <div id="tituloSummary"></div>
+        <div id="summary">
+        <div id="parrafosSummary"></div>
+        <div id="imagenSummary"></div>
+      </div>
+    </div>
+</div>
+<div id="amsterdamSection" class="noMostrar">
+  <div id="titulosAmsterdam"></div>
+        <div id="historyAmsterdam"></div>
+        <div id="tituloTipsAmsterdam"></div>
+        <div id="tipsAmsterdam">
+          <div id="tipsParrafoAmsterdam"></div>
+          <div id="tipsImagenAmsterdam"></div>
+        </div>
+        <div id="titulosDiasAmsterdam"></div>
+        <div id="day1Amsterdam"></div>
+        <div id="titulosDias2Amsterdam"></div>
+        <div id="experienceDay2Amsterdam"></div>
+        <div id="titulosDias3Amsterdam"></div>
+        <div id="experienceDay3Amsterdam"></div>
+        <div id="titulosDias4Amsterdam"></div>
+        <div id="experienceDay4Amsterdam"></div>
+        <div id="tituloSummaryAmsterdam"></div>
+        <div id="summaryAmsterdam">
+          <div id="imagenSummaryAmsterdam"></div>
+        <div id="parrafosSummaryAmsterdam"></div>
+      </div>
+</div>
+<div id="romeSection" class="noMostrar">
+  <div id="titulosRome"></div>
+        <div id="historyRome"></div>
+        <div id="tituloTipsRome"></div>
+        <div id="tipsRome">
+          <div id="tipsParrafoRome"></div>
+          <div id="tipsImagenRome"></div>
+        </div>
+        <div id="titulosDiasRome"></div>
+        <div id="day1Rome"></div>
+        <div id="titulosDias2Rome"></div>
+        <div id="experienceDay2Rome"></div>
+        <div id="titulosDias3Rome"></div>
+        <div id="experienceDay3Rome"></div>
+        <div id="experienceDay3RomeExtra" class="compiladoImagenes"></div>
+        <div id="titulosDias4Rome"></div>
+        <div id="experienceDay4Rome"></div>
+        <div id="experienceDay4RomeExtra" class="compiladoImagenes"></div>
+        <div id="tituloSummaryRome"></div>
+        <div id="summaryRome">
+        <div id="parrafosSummaryRome"></div>
+        <div id="imagenSummaryRome"></div>
+      </div>
+</div>
+</main>
+<footer id="footer"class="noMostrar">
+  <div id="footerBoton">
+    <a href="#tituloPagina"><button >⭡Go up⭡</button></a>
+    
+</div>
+<div id="sources">
+  <div id="tituloSources">
+    <h2>Sources</h2>
+  </div>
+  <div id="footerInfo">
+  <p>The information of this website has been taken from Brittanica website that is a checked source about lots of topics. It is an encyclopaedia written by verified contributors which you can check their biography at the end of each article. It offers articles written and vetted by experts, covering subjects like history, science, literature, art, technology, and more. Britannica aims to deliver accurate and reliable content to users seeking knowledge and understanding on various subjects. You can also check the sources where the contributors have taken the information from. Also, as mentioned in several parts of this website, most things are taken from my personal experience and the use of AI. All rights reserved.
+    </p>
+    <img src="https://cdn.theewf.org/uploads/article/_standardArticle/Britannica-Education_Square.png" alt="imagen Britannica">
+  </div>
+</div>
+<p>This website was made with love by Franco Dell'Orso. All rights reserved.</p>
+</footer>
+<script src="urbanwanderings.js"></script>
+</body>
+</html>

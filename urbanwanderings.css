@@ -1,0 +1,514 @@
+header{
+    display:grid;
+    
+  }
+  body{
+    background-color: #F5F5F5;
+  }
+  .imagenLogo{
+    width:90px;
+    height: 90px;
+    display:block;
+    margin:auto;
+    border-radius: 20%;
+  }
+  .imagenIg{
+    width:30%;
+    height: 30%;
+    display:block;
+    margin:auto;
+    border-radius: 20%;
+  }
+  .imagenDrive{
+    width:30%;
+    height: 30%;
+    display:block;
+   margin:auto;
+   border-radius: 20%;
+  }
+#navegacion img {
+  max-width: 80px;
+  height: auto;
+}
+#barraNavegacion{
+  position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   
+}
+  #navegacion{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    align-items: center;
+    list-style: none;
+    background-color: #41658A;
+    padding: 10px 0;
+    margin: 0;
+  }
+  #navegacion a{
+    text-decoration: none;
+  }
+  #navegacion li {
+    display: inline;
+}
+  body{
+    overflow-x: hidden;
+    padding-top: 60px; /* Ensure content is not hidden behind the fixed navbar */
+}
+#navegacion a{
+    text-decoration: none;
+}
+.container {
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  margin-top: 32px;
+}
+
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+
+.slider {
+  display: flex;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  width: 100vw;
+}
+
+.imagenContenedor{
+  position: relative;
+}
+
+.textoSlider{
+  position: absolute;
+  bottom: 60%;
+  left: 60%;
+  color: white;
+  padding: 10px;
+  background: rgb(0, 0, 0, 0.5);
+  margin-right:10px;
+}
+.parrafoSlider{
+  margin-right:15px;
+  font-family: "Raleway", sans-serif; /* Fuente */
+  font-size: 14px; /* Tamaño de fuente */
+  line-height: 1.6; /* Altura de línea */
+}
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+  width: 100vw;
+  height: 60vh; /* Ajusta esta altura según tus necesidades */
+}
+
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.slider-nav a {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+.slider-nav a:hover{
+  opacity:1;
+}
+ul, ol {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  color: #333333;
+  margin: 20px auto;
+  padding-left: 40px;
+
+}
+
+li {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+li::marker {
+  color: #FFD700; /* Color del marcador */
+  font-size: 1.2em;
+}
+#tituloPagina {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 60px;
+  color: #333333;
+  background-color: #FFD700;
+  margin: 25px 250px;
+  padding: 25px;
+  border-radius: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+#titleSelect {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 36px;
+  color: #333333;
+  margin: 20px 0;
+  border-bottom: 2px solid #FFD700;
+}
+
+/* Estilo del select */
+#selectPlace {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Estilo del botón */
+#selectButton {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #FF6347;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s; /* Transición suave */
+}
+
+#selectButton:hover {
+  background-color: #FF4500;
+  transform: scale(1.05); /* Efecto de escala */
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  color: #333333;
+  margin: 20px 0;
+  text-align: center;
+  padding: 15px;
+  border-bottom: 3px solid #FFD700; /* Línea decorativa */
+  border-radius: 10px;
+  background-color: #f9f9f9; /* Fondo claro */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilo para h3 */
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  color: #333333;
+  margin: 15px 0;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 2px solid #FFD700; /* Línea decorativa */
+  background-color: #f9f9f9; /* Fondo claro */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilo para h4 */
+h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  color: #333333;
+  margin: 10px 0;
+  text-align: left; /* Alineación a la izquierda */
+  padding: 8px;
+  border-left: 4px solid #FFD700; /* Línea decorativa a la izquierda */
+  background-color: #f9f9f9; /* Fondo claro */
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+h5 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: white;
+  margin: 10px 0;
+  text-align: left; /* Alineación a la izquierda */
+  padding: 8px; /* Línea decorativa a la izquierda */
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+/* Estilo del párrafo de salida */
+#output {
+  text-align: center;
+  font-size: 18px;
+  color: #666666;
+}
+main img {
+  max-width: 100%; /* Limita el ancho máximo al 100% del contenedor */
+  height: auto; /* Mantiene la proporción original de la imagen */
+  object-fit: contain; /* Asegura que la imagen se ajuste al contenedor sin estirarse */
+  display: block; /* Asegura que la imagen no tenga espacios extra */
+  margin: auto; /* Espaciado alrededor de la imagen */
+  padding:45px;
+}
+
+.landscape {
+  max-width: 80%;
+  max-height: 500px; /* Altura máxima específica para paisajes */
+}
+/* Estilo específico para imágenes verticales (retrato) */
+.portrait {
+  max-height: 500px; /* Altura máxima específica para retratos */
+  max-width: 100%; /* Ancho máximo para asegurar que no se estire */
+}
+/* Estilo general para párrafos dentro de <main> */
+main p {
+  font-family: "Raleway", sans-serif; /* Fuente */
+  font-size: 18px; /* Tamaño de fuente */
+  line-height: 1.6; /* Altura de línea */
+  margin: 20px 0; /* Márgenes superior e inferior */
+  justify-content: center;
+            align-items: center;
+            text-align: center;
+  color: #333333; /* Color de texto */
+}
+
+/* Estilo específico para párrafos importantes */
+main .important {
+  font-weight: bold; /* Negrita para destacar */
+  color: #FF6347; /* Color naranja */
+}
+
+/* Estilo para enlaces dentro de párrafos */
+main p a {
+  color: #41658A; /* Color de enlaces */
+  text-decoration: none; /* Sin subrayado */
+  border-bottom: 1px solid #41658A; /* Línea al pasar el ratón */
+  transition: border-bottom 0.3s ease; /* Transición suave */
+}
+
+main p a:hover {
+  border-bottom: 1px solid #FF6347; /* Cambio de color al pasar el ratón */
+}
+
+
+#tituloLugar{
+  display:grid;
+  text-align: center;
+}
+.tituloLugarHistory{
+  display:grid;
+}
+#tituloTips{
+  display:grid;
+  font-size: 30px;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+#tipsInfo{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px;
+}
+#history{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px;
+}
+#history h2{
+  display:grid;
+  text-align: center;
+}
+#day1{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px;
+}
+#experienceDay2{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px;
+}
+#experienceDay3{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px;
+}
+.titulosDias{
+  display:grid;
+  text-align: center;
+}
+#summary{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px;
+}
+.noMostrar{
+  display:none;
+}
+.mostrar{
+  display:block;
+}
+#footer {
+  background-color: #41658A; /* Fondo coherente con la barra de navegación */
+  color: #FFFFFF; /* Texto en blanco para buen contraste */
+  padding: 20px 0; /* Espaciado interno */
+  margin-top: 40px; /* Espaciado superior */
+  text-align: center; /* Centrar el texto */
+  font-family: "Raleway", sans-serif; /* Fuente coherente */
+}
+
+#footerBoton {
+  margin-bottom: 20px; /* Espaciado entre el botón y el contenido */
+}
+
+#footerBoton button {
+  background-color: #FF6347; /* Color de fondo del botón */
+  color: #FFFFFF; /* Color del texto del botón */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#footerBoton button:hover {
+  background-color: #FF4500; /* Cambio de color al pasar el ratón */
+}
+
+#sources {
+  margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+#tituloSources {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#footerInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center; /* Alinear el contenido verticalmente */
+  gap: 20px; /* Espaciado entre columnas */
+}
+
+#footerInfo p {
+  text-align: justify;
+  margin: 0 20px; /* Márgenes laterales */
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#footerInfo img {
+  width: 100%;
+  height: auto;
+  max-width: 450px;
+  margin: 0 auto;
+  display: block;
+}
+
+
+
+
+.classSection{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px;
+}
+
+#historyAmsterdam{
+  display:grid;
+  grid-template-columns: 1fr 2fr;
+}
+#tipsAmsterdam{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+#day1Amsterdam{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+#experienceDay2Amsterdam{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+#experienceDay3Amsterdam{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+#experienceDay4Amsterdam{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+#summaryAmsterdam{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px;
+}
+
+#historyRome{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px;
+}
+#tipsRome{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px;
+}
+#day1Rome{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px; 
+}
+#experienceDay2Rome{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+#experienceDay3Rome{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+#experienceDay4Rome{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#summaryRome{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px;
+}
+
+.compiladoImagenes img{
+  width:40%;
+  height:40%;
+  transition:0.5s;
+  object-fit: cover;
+  padding:15px;
+}
+.compiladoImagenes img:hover{
+  transform: scale(1.2);
+}
